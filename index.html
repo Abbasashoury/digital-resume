@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Resume - Abbas Ashoury</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="profile-header">
+        <div class="profile-info">
+          <h1>Abbas Ashoury</h1>
+          <p>Web developer | Computer engineering student</p>
+          <div class="social-icons">
+            <a href="https://github.com/Abbasashoury"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abbas-ashoury-2a7259288/"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="profile-pic">
+          <img src="profile.jpg" alt="Profile Picture" />
+        </div>
+      </header>
+
+      <section class="fade-in about-me">
+        <h2>About me</h2>
+        <p>
+          Hi, I'm Abbas Ashoury — a computer engineering student since 2024.
+          I'm an enthusiastic learner with a growing passion for programming and artificial intelligence.
+          Although I'm still at the beginning of my journey, I believe that every path leads somewhere — and that creativity, curiosity, and hard work are the true keys to success.
+        </p>
+      </section>
+
+      <section class="fade-in">
+        <h2>Skills & Learning</h2>
+        <div class="skills"> 
+          <span>Git & GitHub</span>
+          <span>HTML(l)</span>
+          <span>CSS(l)</span>
+          <span>SQL(l)</span>
+          <span>C++(l)</span>
+          <span>Soft skills(l)</span>
+        </div>
+      </section>
+
+      <section class="fade-in">
+        <h2>Education</h2>
+        <ul>
+          <li>Computer engineering student | Buali sina university</li>
+        </ul>
+      </section>
+
+      <section class="fade-in">
+        <h2>Projects</h2>
+        <div class="project-card">
+          <h3>WMS Project</h3>
+          <p>Warehouse management system (cli)</p>
+          <a
+            class="project-btn"
+            href="https://github.com/Abbasashoury/WMS-Project"
+            target="_blank"
+            >View project</a
+          >
+        </div>
+      </section>
+
+      <section class="fade-in">
+        <h2>Contact Information</h2>
+        <ul>
+          <li>Phone number: +989017988187 </li>
+          <li>Email: abbasashoury84@gmail.com</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      });
+      document
+        .querySelectorAll(".fade-in")
+        .forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
